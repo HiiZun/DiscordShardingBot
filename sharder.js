@@ -5,4 +5,4 @@ const shard = new ShardingManager('./index.js', {
 
 shard.spawn(2);
 
-shard.on('launch', shard => console.log(`[SHARD] Shard ${shard.id}/2`));
+shard.on('launch', shard => console.log(`[SHARDER] Shard ${shard.id}/2 is created`));
